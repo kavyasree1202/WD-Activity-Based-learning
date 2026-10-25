@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration and Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>User Account System</h1>
+        <p>Create an account or log in to continue</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Registration Form -->
+        <section class="form-box">
+            <h2>Registration</h2>
+
+            <form action="#" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name"
+                       required minlength="3">
+
+                <label for="reg-email">Email Address</label>
+                <input type="email" id="reg-email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password"
+                       name="password"
+                       placeholder="Create a password"
+                       minlength="8" required>
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password"
+                       name="confirm-password"
+                       placeholder="Confirm your password" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Login Form -->
+        <section class="form-box">
+            <h2>Login</h2>
+
+            <form action="#" method="post">
+                <label for="login-email">Email Address</label>
+                <input type="email" id="login-email"
+                       name="email" required
+                       placeholder="Enter your email">
+
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password"
+                       name="password" required
+                       placeholder="Enter your password">
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Password Recovery Form -->
+        <section class="form-box">
+            <h2>Forgot Password?</h2>
+
+            <form action="#" method="post">
+                <label for="recovery-email">Registered Email</label>
+                <input type="email" id="recovery-email"
+                       name="email" required
+                       placeholder="Enter your registered email">
+
+                <button type="submit">Reset Password</button>
+            </form>
+        </section>
+
+        <!-- Profile Setup Form -->
+        <section class="form-box">
+            <h2>Profile Setup</h2>
+
+            <form action="#" method="post">
+                <label for="profile-name">Display Name</label>
+                <input type="text" id="profile-name"
+                       name="display-name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone"
+                       pattern="[0-9]{10}"
+                       placeholder="10-digit phone number"
+                       title="Enter a 10-digit phone number"
+                       required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+
+                <label for="bio">About Me</label>
+                <textarea id="bio" name="bio"
+                          rows="3"
+                          placeholder="Write something about yourself"></textarea>
+
+                <button type="submit">Save Profile</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 User Account System</p>
+    </footer>
+
+</body>
+</html>
